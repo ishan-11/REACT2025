@@ -1,0 +1,254 @@
+/* ========== GLOBAL RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+    background: #f8f8f8;
+    color: #222;
+  }
+  
+  .app {
+    padding-top: 110px; /* space for fixed header */
+  }
+  
+  /* ========== HEADER (Swiggy style) ========== */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 80px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 0 60px;
+    background: #ffffff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  
+    z-index: 1000;
+  }
+  
+  /* Left: logo + location */
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .logo img {
+    height: 52px;
+    width: auto;
+    border-radius: 18px;
+  }
+  
+  /* Location block */
+  .location {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .location-main {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-size: 14px;
+  }
+  
+  .location-name {
+    font-weight: 700;
+    border-bottom: 2px solid #111;
+    padding-bottom: 1px;
+  }
+  
+  .location-area {
+    color: #686b78;
+  }
+  
+  .location-arrow {
+    font-size: 10px;
+    color: #fc8019; /* Swiggy orange */
+  }
+  
+  .location-underline {
+    height: 1px;
+    width: 36px;
+    background: #111;
+    margin-top: 3px;
+  }
+  
+  /* Right: nav items */
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #3d4152;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-item:hover {
+    color: #fc8019;
+  }
+  
+  .nav-icon {
+    font-size: 18px;
+  }
+  
+  /* Offers NEW tag */
+  .nav-tag-new {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fc8019;
+    margin-left: 4px;
+  }
+  
+  /* Cart badge */
+  .nav-cart {
+    font-weight: 600;
+  }
+  
+  .nav-cart-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: 2px solid #3d4152;
+    font-size: 12px;
+  }
+  
+  /* ========== BODY ========== */
+  .body {
+    padding: 20px 60px 40px;
+  }
+  
+  /* Search bar */
+  .search {
+    max-width: 400px;
+  }
+  
+  .search input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .search input:focus {
+    outline: none;
+    border-color: #fc8019;
+    box-shadow: 0 0 0 3px rgba(252, 128, 25, 0.2);
+  }
+  
+  /* ========== RESTAURANT LIST & CARD ========== */
+  .res-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 24px;
+  }
+  
+  .res-card {
+    background: #ffffff;
+    padding: 14px 14px 16px;
+    border-radius: 14px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .res-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    border-color: #ffd8b2;
+  }
+  
+  /* Card image */
+  .res-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+  
+  /* Text inside card */
+  .res-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .res-area {
+    font-size: 13px;
+    color: #686b78;
+    margin-bottom: 4px;
+  }
+  
+  .res-cuisines {
+    font-size: 13px;
+    color: #93959f;
+    margin-bottom: 8px;
+  }
+  
+  .res-meta {
+    font-size: 13px;
+    font-weight: 500;
+    color: #3d4152;
+  }
+  
+  .res-rating {
+    background: #48c479;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 900px) {
+    .header {
+      padding: 0 20px;
+    }
+  
+    .body {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      height: 72px;
+      padding: 0 12px;
+    }
+  
+    .header-right {
+      display: none; /* simple mobile version for now */
+    }
+  
+    .app {
+      padding-top: 80px;
+    }
+  }
+  

@@ -1,0 +1,1070 @@
+{  
+
+
+"restaurants": [
+    {
+        "info": {
+            "id": "750421",
+            "name": "Daily Kitchen - Everyday Homely Meals",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/10/15e369d3-839d-4f64-956e-0a55eada3661_750421.jpg",
+            "locality": "Mumbai",
+            "areaName": "Orlem",
+            "costForTwo": "₹250 for two",
+            "cuisines": [
+                "Home Food",
+                "Indian",
+                "North Indian",
+                "Thalis"
+            ],
+            "avgRating": 4.4,
+            "parentId": "444382",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "919",
+            "promoted": true,
+            "adTrackingId": "cid=9450e82a-5f89-4a59-8774-c18daf481757~p=1~adgrpid=9450e82a-5f89-4a59-8774-c18daf481757#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=750421~plpr=COLLECTION~eid=5090c76e-bf95-4e58-a234-e2a02227d44d~srvts=1763919399784~collid=115117",
+            "sla": {
+                "deliveryTime": 15,
+                "lastMileTravel": 1.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "10-20 mins",
+                "lastMileTravelString": "1.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-11-24 02:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    },
+                    {
+                        "imageId": "Ratnesh_Badges/Rx_Awards_2025/Newcomers.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Ratnesh_Badges/Rx_Awards_2025/Newcomers.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹99"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/mumbai/daily-kitchen-everyday-homely-meals-orlem-rest750421",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "1098480",
+            "name": "ITC Aashirvaad Soul Creations",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/10/8/043b984d-83d3-42ba-9a42-43dd84fd7329_1098480.jpg",
+            "locality": "Parmeshwar Industrial Estate",
+            "areaName": "Malad",
+            "costForTwo": "₹500 for two",
+            "cuisines": [
+                "North Indian",
+                "pure veg",
+                "Healthy Food",
+                "Home Food",
+                "South Indian",
+                "Sweets"
+            ],
+            "avgRating": 4.3,
+            "veg": true,
+            "parentId": "346141",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "315",
+            "sla": {
+                "deliveryTime": 25,
+                "lastMileTravel": 1.6,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "1.6 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-11-24 02:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹99"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/mumbai/itc-aashirvaad-soul-creations-parmeshwar-industrial-estate-malad-rest1098480",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "153021",
+            "name": "Persia Darbar",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/28/77f2ed85-7501-4f58-969e-6230fbea1f5a_153021.jpg",
+            "locality": "Malad West",
+            "areaName": "Malad West",
+            "costForTwo": "₹500 for two",
+            "cuisines": [
+                "Biryani",
+                "North Indian"
+            ],
+            "avgRating": 4.4,
+            "parentId": "3593",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "13K+",
+            "promoted": true,
+            "adTrackingId": "cid=5dbaf173-1b55-4a55-92a4-f0e6e55b6fa7~p=3~adgrpid=5dbaf173-1b55-4a55-92a4-f0e6e55b6fa7#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=153021~plpr=COLLECTION~eid=b5dc0414-996f-4768-bcb6-04b6afaeeafd~srvts=1763919399784~collid=115117",
+            "sla": {
+                "deliveryTime": 23,
+                "lastMileTravel": 2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "2.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-11-24 04:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹79"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.3",
+                    "ratingCount": "3.4K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/mumbai/persia-darbar-malad-west-rest153021",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "258512",
+            "name": "KFC",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/10/17/80d7944a-bef3-4fa2-9f0e-43d5f9daabd0_258512.JPG",
+            "locality": "Malad West",
+            "areaName": "Malad West",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+                "Burgers",
+                "Fast Food",
+                "Rolls & Wraps"
+            ],
+            "avgRating": 4.2,
+            "parentId": "547",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "5.2K+",
+            "sla": {
+                "deliveryTime": 31,
+                "lastMileTravel": 1.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "1.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-11-24 01:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹589"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.0",
+                    "ratingCount": "3.7K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/mumbai/kfc-malad-west-rest258512",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "853462",
+            "name": "Punjab Depot",
+            "cloudinaryImageId": "6cbd82ff380979a806f696c67682a6bd",
+            "locality": "NL Road",
+            "areaName": "Malad Kan West",
+            "costForTwo": "₹250 for two",
+            "cuisines": [
+                "North Indian",
+                "Biryani",
+                "Tandoor",
+                "Punjabi",
+                "Combos"
+            ],
+            "avgRating": 4.2,
+            "parentId": "21861",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "4.7K+",
+            "promoted": true,
+            "adTrackingId": "cid=fd21feb3-1a8a-4b7a-a755-72f800ea973a~p=5~adgrpid=fd21feb3-1a8a-4b7a-a755-72f800ea973a#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=853462~plpr=COLLECTION~eid=ab9d76fd-d87a-4788-a346-4869e68d1fa7~srvts=1763919399784~collid=115117",
+            "sla": {
+                "deliveryTime": 16,
+                "lastMileTravel": 0.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15-20 mins",
+                "lastMileTravelString": "0.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-11-24 04:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    },
+                    {
+                        "imageId": "Rxawards/_CATEGORY-North%20Indian.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-North%20Indian.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹99"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/mumbai/punjab-depot-nl-road-malad-kan-west-rest853462",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "329254",
+            "name": "Sahara Restaurant",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/15/a9aa17ea-8c12-4384-87d6-ae4cf763c10b_329254.jpg",
+            "locality": "Malad East",
+            "areaName": "Malad East",
+            "costForTwo": "₹500 for two",
+            "cuisines": [
+                "Chinese",
+                "North Indian",
+                "Mughlai"
+            ],
+            "avgRating": 3.9,
+            "parentId": "12130",
+            "avgRatingString": "3.9",
+            "totalRatingsString": "4.1K+",
+            "sla": {
+                "deliveryTime": 27,
+                "lastMileTravel": 4.1,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 mins",
+                "lastMileTravelString": "4.1 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-11-23 23:59:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹80"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "3.8",
+                    "ratingCount": "474"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/mumbai/sahara-restaurant-malad-east-rest329254",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "579266",
+            "name": "BOX8 - Desi Meals",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/26/87bd6ee7-bbcf-4e03-abb3-a2bdb8913d98_579266.jpg",
+            "locality": "Mumbai",
+            "areaName": "Orlem",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "North Indian",
+                "Biryani",
+                "Thalis",
+                "Home Food"
+            ],
+            "avgRating": 4.5,
+            "parentId": "10655",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "2.2K+",
+            "sla": {
+                "deliveryTime": 25,
+                "lastMileTravel": 1.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-30 mins",
+                "lastMileTravelString": "1.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-11-24 02:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹99"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/mumbai/box8-desi-meals-orlem-rest579266",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "296044",
+            "name": "Big Bowl",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/22/deff0d02-ca1d-4ef9-9d62-b0cbeabf33d3_296044.JPG",
+            "locality": "Geeta Industrial Estate",
+            "areaName": "Goregaon",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "Chinese",
+                "Tibetan",
+                "Desserts"
+            ],
+            "avgRating": 4.4,
+            "parentId": "434792",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "2.6K+",
+            "promoted": true,
+            "adTrackingId": "cid=345f6f6f-cbf1-4fa0-9da8-c7d662849d4a~p=8~adgrpid=345f6f6f-cbf1-4fa0-9da8-c7d662849d4a#ag5~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=296044~plpr=COLLECTION~eid=bd94bf00-dfa7-4f7d-bfc8-de8d11f56c20~srvts=1763919399784~collid=115117",
+            "sla": {
+                "deliveryTime": 33,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-40 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-11-24 01:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹129"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/mumbai/big-bowl-geeta-industrial-estate-goregaon-rest296044",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "512798",
+            "name": "Rustam Darbar",
+            "cloudinaryImageId": "duv3hcz8yrvodcjuidur",
+            "locality": "Nr S J Studio",
+            "areaName": "Malad Kan West",
+            "costForTwo": "₹500 for two",
+            "cuisines": [
+                "Chinese",
+                "North Indian",
+                "Mughlai"
+            ],
+            "avgRating": 4,
+            "parentId": "306627",
+            "avgRatingString": "4.0",
+            "totalRatingsString": "1.7K+",
+            "sla": {
+                "deliveryTime": 21,
+                "lastMileTravel": 1.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "1.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-11-23 23:59:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "android/static-assets/icons/big_rx.png",
+                        "description": "bolt!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "android/static-assets/icons/big_rx.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹109"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/mumbai/rustam-darbar-nr-s-j-studio-malad-kan-west-rest512798",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "547375",
+            "name": "Raja Chinese Corner",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/9/35d6a852-8056-4aaf-86e4-4416f9ab9e9f_547375.jpg",
+            "locality": "Parekih Nagar",
+            "areaName": "Borivali",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+                "Chinese"
+            ],
+            "avgRating": 3.9,
+            "parentId": "328816",
+            "avgRatingString": "3.9",
+            "totalRatingsString": "448",
+            "sla": {
+                "deliveryTime": 19,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15-20 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-11-24 03:30:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "25% OFF",
+                "subHeader": "UPTO ₹65"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/mumbai/raja-chinese-corner-parekih-nagar-borivali-rest547375",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "97880",
+            "name": "Vivek Chinese Corner",
+            "cloudinaryImageId": "vu3ekyzao0gxp0efkctz",
+            "locality": "Kandivali West",
+            "areaName": "Borivali West",
+            "costForTwo": "₹500 for two",
+            "cuisines": [
+                "Chinese"
+            ],
+            "avgRating": 4.3,
+            "parentId": "224323",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "4.7K+",
+            "promoted": true,
+            "adTrackingId": "cid=2974dee3-4c72-4885-bf58-6205ceb977ed~p=14~adgrpid=2974dee3-4c72-4885-bf58-6205ceb977ed#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=97880~plpr=COLLECTION~eid=800a4dd6-4fcd-4714-8ba4-cc369c79f6f8~srvts=1763919399784~collid=115117",
+            "sla": {
+                "deliveryTime": 41,
+                "lastMileTravel": 5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "40-50 mins",
+                "lastMileTravelString": "5.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-11-24 00:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹99"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "1.0",
+                    "ratingCount": "<3"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/mumbai/vivek-chinese-corner-kandivali-west-borivali-west-rest97880",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "58811",
+            "name": "Radha Krishna",
+            "cloudinaryImageId": "gg8dm1t5wx5sz8ono25x",
+            "locality": "Malad West",
+            "areaName": "Malad West",
+            "costForTwo": "₹550 for two",
+            "cuisines": [
+                "Indian",
+                "South Indian",
+                "Chinese",
+                "Snacks",
+                "Beverages"
+            ],
+            "avgRating": 4.4,
+            "veg": true,
+            "parentId": "2875",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "5.4K+",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 3.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 mins",
+                "lastMileTravelString": "3.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-11-23 23:59:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹75"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "text": "BENEFITS",
+                    "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
+                },
+                "freedelMessage": "FREE DELIVERY"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.0",
+                    "ratingCount": "4.2K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/mumbai/radha-krishna-malad-west-rest58811",
+            "type": "WEBLINK"
+        }
+    }
+]
+
+}
