@@ -727,409 +727,54 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _resJson = require("./res.json"); // your JSON file
-var _resJsonDefault = parcelHelpers.interopDefault(_resJson);
-// Swiggy Cloudinary base URL
-const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/";
-// ---------------- HEADER ----------------
-const Header = ()=>{
+var _header = require("./src/components/Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+var _body = require("./src/components/Body");
+var _bodyDefault = parcelHelpers.interopDefault(_body);
+// ---------------- APP LAYOUT ----------------
+const AppLayout = ()=>{
+    console.log("body  virtual dom", /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 10,
+        columnNumber: 39
+    }, undefined));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
+        className: "app",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "header-left",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "logo",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: "https://images-platform.99static.com/v84irzbNBd5aawXGKXfH4SEjcn0=/0x0:960x960/500x500/top/smart/99designs-contests-attachments/117/117132/attachment_117132760",
-                            alt: "logo"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 15,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 14,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "location",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "location-main",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "location-name",
-                                        children: "Ishan1"
-                                    }, void 0, false, {
-                                        fileName: "App.js",
-                                        lineNumber: 23,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "location-area",
-                                        children: "Malad, Mamledarwadi, Malad West..."
-                                    }, void 0, false, {
-                                        fileName: "App.js",
-                                        lineNumber: 24,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "location-arrow",
-                                        children: "\u25BC"
-                                    }, void 0, false, {
-                                        fileName: "App.js",
-                                        lineNumber: 27,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "App.js",
-                                lineNumber: 22,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "location-underline"
-                            }, void 0, false, {
-                                fileName: "App.js",
-                                lineNumber: 29,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "App.js",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 13,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "header-right",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "nav-item",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "nav-icon",
-                                children: "\uD83E\uDDF3"
-                            }, void 0, false, {
-                                fileName: "App.js",
-                                lineNumber: 36,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                children: "Swiggy Corporate"
-                            }, void 0, false, {
-                                fileName: "App.js",
-                                lineNumber: 37,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "App.js",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "nav-item",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "nav-icon",
-                                children: "\uD83D\uDD0D"
-                            }, void 0, false, {
-                                fileName: "App.js",
-                                lineNumber: 41,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                children: "Search"
-                            }, void 0, false, {
-                                fileName: "App.js",
-                                lineNumber: 42,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "App.js",
-                        lineNumber: 40,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "nav-item",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "nav-icon",
-                                children: "\uD83C\uDFF7\uFE0F"
-                            }, void 0, false, {
-                                fileName: "App.js",
-                                lineNumber: 46,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                children: [
-                                    "Offers ",
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "nav-tag-new",
-                                        children: "NEW"
-                                    }, void 0, false, {
-                                        fileName: "App.js",
-                                        lineNumber: 48,
-                                        columnNumber: 20
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "App.js",
-                                lineNumber: 47,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "App.js",
-                        lineNumber: 45,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "nav-item",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "nav-icon",
-                                children: "\uD83D\uDEC8"
-                            }, void 0, false, {
-                                fileName: "App.js",
-                                lineNumber: 53,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                children: "Help"
-                            }, void 0, false, {
-                                fileName: "App.js",
-                                lineNumber: 54,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "App.js",
-                        lineNumber: 52,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "nav-item",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "nav-icon",
-                                children: "\uD83D\uDC64"
-                            }, void 0, false, {
-                                fileName: "App.js",
-                                lineNumber: 58,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                children: "Ishaan"
-                            }, void 0, false, {
-                                fileName: "App.js",
-                                lineNumber: 59,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "App.js",
-                        lineNumber: 57,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "nav-item nav-cart",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "nav-icon nav-cart-count",
-                                children: "0"
-                            }, void 0, false, {
-                                fileName: "App.js",
-                                lineNumber: 63,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                children: "Cart"
-                            }, void 0, false, {
-                                fileName: "App.js",
-                                lineNumber: 64,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "App.js",
-                        lineNumber: 62,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 34,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 5
     }, undefined);
 };
-_c = Header;
-// ---------------- RESTAURANT CARD ----------------
-const RestaurantCard = ({ name, cuisines, rating, imageId, areaName })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "res-card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: CDN_URL + imageId,
-                alt: name
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 75,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: name
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 76,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "res-area",
-                children: areaName
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 77,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "res-cuisines",
-                children: cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 78,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "res-meta",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    className: "res-rating",
-                    children: [
-                        "\u2B50 ",
-                        rating
-                    ]
-                }, void 0, true, {
-                    fileName: "App.js",
-                    lineNumber: 80,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 79,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 74,
-        columnNumber: 5
-    }, undefined);
-};
-_c1 = RestaurantCard;
-// ---------------- BODY ----------------
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "body",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "text",
-                    placeholder: "Search for restaurants"
-                }, void 0, false, {
-                    fileName: "App.js",
-                    lineNumber: 91,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 90,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "res-list",
-                children: (0, _resJsonDefault.default).restaurants.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                        name: restaurant.info.name,
-                        cuisines: restaurant.info.cuisines,
-                        rating: restaurant.info.avgRating,
-                        imageId: restaurant.info.cloudinaryImageId,
-                        areaName: restaurant.info.areaName
-                    }, restaurant.info.id, false, {
-                        fileName: "App.js",
-                        lineNumber: 96,
-                        columnNumber: 11
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 94,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 89,
-        columnNumber: 5
-    }, undefined);
-};
-_c2 = Body;
-// ---------------- APP LAYOUT ----------------
-const AppLayout = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "app",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 114,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 115,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 113,
-        columnNumber: 5
-    }, undefined);
-};
-_c3 = AppLayout;
+_c = AppLayout;
 // ---------------- RENDER APP ----------------
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 122,
+    lineNumber: 21,
     columnNumber: 13
 }, undefined));
-var _c, _c1, _c2, _c3;
-$RefreshReg$(_c, "Header");
-$RefreshReg$(_c1, "RestaurantCard");
-$RefreshReg$(_c2, "Body");
-$RefreshReg$(_c3, "AppLayout");
+var _c;
+$RefreshReg$(_c, "AppLayout");
 
   $parcel$ReactRefreshHelpers$4931.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./res.json":"68ddD","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./src/components/Header":"3PJ6N","./src/components/Body":"loQlg"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -17783,10 +17428,7 @@ module.exports = require("b0f0e6b9e8349dac");
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{"6f0162e9ab224cd4":"jMk1U"}],"68ddD":[function(require,module,exports,__globalThis) {
-module.exports = JSON.parse('{"restaurants":[{"info":{"id":"750421","name":"Daily Kitchen - Everyday Homely Meals","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/6/10/15e369d3-839d-4f64-956e-0a55eada3661_750421.jpg","locality":"Mumbai","areaName":"Orlem","costForTwo":"\u20B9250 for two","cuisines":["Home Food","Indian","North Indian","Thalis"],"avgRating":4.4,"parentId":"444382","avgRatingString":"4.4","totalRatingsString":"919","promoted":true,"adTrackingId":"cid=9450e82a-5f89-4a59-8774-c18daf481757~p=1~adgrpid=9450e82a-5f89-4a59-8774-c18daf481757#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=750421~plpr=COLLECTION~eid=5090c76e-bf95-4e58-a234-e2a02227d44d~srvts=1763919399784~collid=115117","sla":{"deliveryTime":15,"lastMileTravel":1.5,"serviceability":"SERVICEABLE","slaString":"10-20 mins","lastMileTravelString":"1.5 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 02:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"},{"imageId":"Ratnesh_Badges/Rx_Awards_2025/Newcomers.png","description":"Delivery!"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}},{"attributes":{"description":"Delivery!","imageId":"Ratnesh_Badges/Rx_Awards_2025/Newcomers.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B999"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"},"cta":{"link":"https://www.swiggy.com/city/mumbai/daily-kitchen-everyday-homely-meals-orlem-rest750421","type":"WEBLINK"}},{"info":{"id":"1098480","name":"ITC Aashirvaad Soul Creations","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/10/8/043b984d-83d3-42ba-9a42-43dd84fd7329_1098480.jpg","locality":"Parmeshwar Industrial Estate","areaName":"Malad","costForTwo":"\u20B9500 for two","cuisines":["North Indian","pure veg","Healthy Food","Home Food","South Indian","Sweets"],"avgRating":4.3,"veg":true,"parentId":"346141","avgRatingString":"4.3","totalRatingsString":"315","sla":{"deliveryTime":25,"lastMileTravel":1.6,"serviceability":"SERVICEABLE","slaString":"20-25 mins","lastMileTravelString":"1.6 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 02:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B999"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"},"cta":{"link":"https://www.swiggy.com/city/mumbai/itc-aashirvaad-soul-creations-parmeshwar-industrial-estate-malad-rest1098480","type":"WEBLINK"}},{"info":{"id":"153021","name":"Persia Darbar","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/1/28/77f2ed85-7501-4f58-969e-6230fbea1f5a_153021.jpg","locality":"Malad West","areaName":"Malad West","costForTwo":"\u20B9500 for two","cuisines":["Biryani","North Indian"],"avgRating":4.4,"parentId":"3593","avgRatingString":"4.4","totalRatingsString":"13K+","promoted":true,"adTrackingId":"cid=5dbaf173-1b55-4a55-92a4-f0e6e55b6fa7~p=3~adgrpid=5dbaf173-1b55-4a55-92a4-f0e6e55b6fa7#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=153021~plpr=COLLECTION~eid=b5dc0414-996f-4768-bcb6-04b6afaeeafd~srvts=1763919399784~collid=115117","sla":{"deliveryTime":23,"lastMileTravel":2,"serviceability":"SERVICEABLE","slaString":"20-25 mins","lastMileTravelString":"2.0 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 04:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B979"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"4.3","ratingCount":"3.4K+"},"source":"GOOGLE","sourceIconImageId":"v1704440323/google_ratings/rating_google_tag"},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"},"cta":{"link":"https://www.swiggy.com/city/mumbai/persia-darbar-malad-west-rest153021","type":"WEBLINK"}},{"info":{"id":"258512","name":"KFC","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/10/17/80d7944a-bef3-4fa2-9f0e-43d5f9daabd0_258512.JPG","locality":"Malad West","areaName":"Malad West","costForTwo":"\u20B9400 for two","cuisines":["Burgers","Fast Food","Rolls & Wraps"],"avgRating":4.2,"parentId":"547","avgRatingString":"4.2","totalRatingsString":"5.2K+","sla":{"deliveryTime":31,"lastMileTravel":1.7,"serviceability":"SERVICEABLE","slaString":"30-35 mins","lastMileTravelString":"1.7 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 01:00:00","opened":true},"badges":{},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B9589"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"4.0","ratingCount":"3.7K+"},"source":"GOOGLE","sourceIconImageId":"v1704440323/google_ratings/rating_google_tag"},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"},"cta":{"link":"https://www.swiggy.com/city/mumbai/kfc-malad-west-rest258512","type":"WEBLINK"}},{"info":{"id":"853462","name":"Punjab Depot","cloudinaryImageId":"6cbd82ff380979a806f696c67682a6bd","locality":"NL Road","areaName":"Malad Kan West","costForTwo":"\u20B9250 for two","cuisines":["North Indian","Biryani","Tandoor","Punjabi","Combos"],"avgRating":4.2,"parentId":"21861","avgRatingString":"4.2","totalRatingsString":"4.7K+","promoted":true,"adTrackingId":"cid=fd21feb3-1a8a-4b7a-a755-72f800ea973a~p=5~adgrpid=fd21feb3-1a8a-4b7a-a755-72f800ea973a#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=853462~plpr=COLLECTION~eid=ab9d76fd-d87a-4788-a346-4869e68d1fa7~srvts=1763919399784~collid=115117","sla":{"deliveryTime":16,"lastMileTravel":0.7,"serviceability":"SERVICEABLE","slaString":"15-20 mins","lastMileTravelString":"0.7 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 04:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"},{"imageId":"Rxawards/_CATEGORY-North%20Indian.png","description":"Delivery!"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}},{"attributes":{"description":"Delivery!","imageId":"Rxawards/_CATEGORY-North%20Indian.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B999"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"},"cta":{"link":"https://www.swiggy.com/city/mumbai/punjab-depot-nl-road-malad-kan-west-rest853462","type":"WEBLINK"}},{"info":{"id":"329254","name":"Sahara Restaurant","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2024/11/15/a9aa17ea-8c12-4384-87d6-ae4cf763c10b_329254.jpg","locality":"Malad East","areaName":"Malad East","costForTwo":"\u20B9500 for two","cuisines":["Chinese","North Indian","Mughlai"],"avgRating":3.9,"parentId":"12130","avgRatingString":"3.9","totalRatingsString":"4.1K+","sla":{"deliveryTime":27,"lastMileTravel":4.1,"serviceability":"SERVICEABLE","slaString":"25-30 mins","lastMileTravelString":"4.1 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-23 23:59:00","opened":true},"badges":{},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B980"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"3.8","ratingCount":"474"},"source":"GOOGLE","sourceIconImageId":"v1704440323/google_ratings/rating_google_tag"},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"},"cta":{"link":"https://www.swiggy.com/city/mumbai/sahara-restaurant-malad-east-rest329254","type":"WEBLINK"}},{"info":{"id":"579266","name":"BOX8 - Desi Meals","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/3/26/87bd6ee7-bbcf-4e03-abb3-a2bdb8913d98_579266.jpg","locality":"Mumbai","areaName":"Orlem","costForTwo":"\u20B9200 for two","cuisines":["North Indian","Biryani","Thalis","Home Food"],"avgRating":4.5,"parentId":"10655","avgRatingString":"4.5","totalRatingsString":"2.2K+","sla":{"deliveryTime":25,"lastMileTravel":1.5,"serviceability":"SERVICEABLE","slaString":"20-30 mins","lastMileTravelString":"1.5 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 02:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B999"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"},"cta":{"link":"https://www.swiggy.com/city/mumbai/box8-desi-meals-orlem-rest579266","type":"WEBLINK"}},{"info":{"id":"296044","name":"Big Bowl","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2024/6/22/deff0d02-ca1d-4ef9-9d62-b0cbeabf33d3_296044.JPG","locality":"Geeta Industrial Estate","areaName":"Goregaon","costForTwo":"\u20B9300 for two","cuisines":["Chinese","Tibetan","Desserts"],"avgRating":4.4,"parentId":"434792","avgRatingString":"4.4","totalRatingsString":"2.6K+","promoted":true,"adTrackingId":"cid=345f6f6f-cbf1-4fa0-9da8-c7d662849d4a~p=8~adgrpid=345f6f6f-cbf1-4fa0-9da8-c7d662849d4a#ag5~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=296044~plpr=COLLECTION~eid=bd94bf00-dfa7-4f7d-bfc8-de8d11f56c20~srvts=1763919399784~collid=115117","sla":{"deliveryTime":33,"lastMileTravel":3,"serviceability":"SERVICEABLE","slaString":"30-40 mins","lastMileTravelString":"3.0 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 01:00:00","opened":true},"badges":{},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B9129"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"},"cta":{"link":"https://www.swiggy.com/city/mumbai/big-bowl-geeta-industrial-estate-goregaon-rest296044","type":"WEBLINK"}},{"info":{"id":"512798","name":"Rustam Darbar","cloudinaryImageId":"duv3hcz8yrvodcjuidur","locality":"Nr S J Studio","areaName":"Malad Kan West","costForTwo":"\u20B9500 for two","cuisines":["Chinese","North Indian","Mughlai"],"avgRating":4,"parentId":"306627","avgRatingString":"4.0","totalRatingsString":"1.7K+","sla":{"deliveryTime":21,"lastMileTravel":1.4,"serviceability":"SERVICEABLE","slaString":"20-25 mins","lastMileTravelString":"1.4 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-23 23:59:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B9109"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"},"cta":{"link":"https://www.swiggy.com/city/mumbai/rustam-darbar-nr-s-j-studio-malad-kan-west-rest512798","type":"WEBLINK"}},{"info":{"id":"547375","name":"Raja Chinese Corner","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2024/4/9/35d6a852-8056-4aaf-86e4-4416f9ab9e9f_547375.jpg","locality":"Parekih Nagar","areaName":"Borivali","costForTwo":"\u20B9400 for two","cuisines":["Chinese"],"avgRating":3.9,"parentId":"328816","avgRatingString":"3.9","totalRatingsString":"448","sla":{"deliveryTime":19,"lastMileTravel":3,"serviceability":"SERVICEABLE","slaString":"15-20 mins","lastMileTravelString":"3.0 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 03:30:00","opened":true},"badges":{},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"25% OFF","subHeader":"UPTO \u20B965"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"},"cta":{"link":"https://www.swiggy.com/city/mumbai/raja-chinese-corner-parekih-nagar-borivali-rest547375","type":"WEBLINK"}},{"info":{"id":"97880","name":"Vivek Chinese Corner","cloudinaryImageId":"vu3ekyzao0gxp0efkctz","locality":"Kandivali West","areaName":"Borivali West","costForTwo":"\u20B9500 for two","cuisines":["Chinese"],"avgRating":4.3,"parentId":"224323","avgRatingString":"4.3","totalRatingsString":"4.7K+","promoted":true,"adTrackingId":"cid=2974dee3-4c72-4885-bf58-6205ceb977ed~p=14~adgrpid=2974dee3-4c72-4885-bf58-6205ceb977ed#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=97880~plpr=COLLECTION~eid=800a4dd6-4fcd-4714-8ba4-cc369c79f6f8~srvts=1763919399784~collid=115117","sla":{"deliveryTime":41,"lastMileTravel":5,"serviceability":"SERVICEABLE","slaString":"40-50 mins","lastMileTravelString":"5.0 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 00:00:00","opened":true},"badges":{},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B999"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"1.0","ratingCount":"<3"},"source":"GOOGLE","sourceIconImageId":"v1704440323/google_ratings/rating_google_tag"},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"},"cta":{"link":"https://www.swiggy.com/city/mumbai/vivek-chinese-corner-kandivali-west-borivali-west-rest97880","type":"WEBLINK"}},{"info":{"id":"58811","name":"Radha Krishna","cloudinaryImageId":"gg8dm1t5wx5sz8ono25x","locality":"Malad West","areaName":"Malad West","costForTwo":"\u20B9550 for two","cuisines":["Indian","South Indian","Chinese","Snacks","Beverages"],"avgRating":4.4,"veg":true,"parentId":"2875","avgRatingString":"4.4","totalRatingsString":"5.4K+","sla":{"deliveryTime":30,"lastMileTravel":3.7,"serviceability":"SERVICEABLE","slaString":"25-30 mins","lastMileTravelString":"3.7 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-23 23:59:00","opened":true},"badges":{"imageBadges":[{"imageId":"v1695133679/badges/Pure_Veg111.png","description":"pureveg"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"pureveg","imageId":"v1695133679/badges/Pure_Veg111.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B975"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"4.0","ratingCount":"4.2K+"},"source":"GOOGLE","sourceIconImageId":"v1704440323/google_ratings/rating_google_tag"},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-ae33c42d-da46-4833-91c0-c9889f5ce6cb"},"cta":{"link":"https://www.swiggy.com/city/mumbai/radha-krishna-malad-west-rest58811","type":"WEBLINK"}}]}');
-
-},{}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"6f0162e9ab224cd4":"jMk1U"}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -20094,6 +19736,391 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["icAAj","blcJa"], "blcJa", "parcelRequirea9e5", {}, null, null, "http://localhost:1234")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3PJ6N":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$d118 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$d118.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d118.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _constant = require("../utils/constant");
+var _s = $RefreshSig$();
+const Header = ()=>{
+    _s();
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = (0, _react.useState)(false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "header-left",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "logo",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _constant.LOGO),
+                            alt: "logo"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 13,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 12,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "location",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "location-main",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "location-name",
+                                        children: "Ishan1"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 21,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "location-area",
+                                        children: "Malad"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 22,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "location-arrow",
+                                        children: "\u25BC"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 25,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 20,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "location-underline"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 27,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 19,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Header.js",
+                lineNumber: 11,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "mobile-menu-btn",
+                onClick: ()=>setIsMobileMenuOpen((prev)=>!prev),
+                children: "\u2630"
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 32,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "header-right" + (isMobileMenuOpen ? " mobile-open" : ""),
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "nav-item",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: "Search"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 49,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 47,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "nav-item",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: [
+                                "Offers ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "nav-tag-new",
+                                    children: "NEW"
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.js",
+                                    lineNumber: 55,
+                                    columnNumber: 22
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 54,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 52,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "nav-item",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: "Help"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 61,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 59,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "nav-item",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: "Ishan"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 66,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 64,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "nav-item nav-cart",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 71,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 69,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Header.js",
+                lineNumber: 40,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Header.js",
+        lineNumber: 9,
+        columnNumber: 7
+    }, undefined);
+};
+_s(Header, "QerECOS75+B7gv+k3q7FrDf39mc=");
+_c = Header;
+exports.default = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$d118.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../utils/constant":"2QBK6"}],"2QBK6":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
+parcelHelpers.export(exports, "LOGO", ()=>LOGO);
+const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/";
+const LOGO = "https://media.istockphoto.com/id/1435983029/vector/food-delivery-logo-images.jpg?s=612x612&w=0&k=20&c=HXPxcjOxUiW4pMW1u9E0k2dJYQOU37a_0qZAy3so8fY=";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"loQlg":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$8a58 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$8a58.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8a58.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _restaurant = require("./Restaurant");
+var _restaurantDefault = parcelHelpers.interopDefault(_restaurant);
+var _resJson = require("../utils/res.json"); // my mock data
+var _resJsonDefault = parcelHelpers.interopDefault(_resJson);
+var _react = require("react");
+var _s = $RefreshSig$();
+const Body = ()=>{
+    _s();
+    console.log("Restaurant Data:", JSON.stringify((0, _resJsonDefault.default).restaurants)); // Debugging line to check data structure
+    const [restaurants, setRestaurants] = (0, _react.useState)((0, _resJsonDefault.default).restaurants);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "filter",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "filter-btn",
+                    onClick: ()=>{
+                        const filteredData = (0, _resJsonDefault.default).restaurants.filter((restaurant)=>restaurant.info.avgRating > 4.3);
+                        console.log("Filtered Data:", filteredData);
+                        setRestaurants(filteredData);
+                    },
+                    children: "Top Rated Restaurant"
+                }, void 0, false, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 12,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 11,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-list",
+                children: restaurants.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantDefault.default), {
+                        name: restaurant.info.name,
+                        cuisines: restaurant.info.cuisines,
+                        rating: restaurant.info.avgRating,
+                        imageId: restaurant.info.cloudinaryImageId,
+                        areaName: restaurant.info.areaName,
+                        onClick: console.log(restaurant.info.name)
+                    }, restaurant.info.id, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 27,
+                        columnNumber: 13
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 25,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Body.js",
+        lineNumber: 10,
+        columnNumber: 7
+    }, undefined);
+};
+_s(Body, "uK+Gkrwwc+9sjgLZV41IXFHEtHA=");
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$8a58.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","./Restaurant":"dGjsM","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../utils/res.json":"g2MAn","react":"jMk1U"}],"dGjsM":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$9ab4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$9ab4.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9ab4.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constant = require("../utils/constant");
+const RestaurantCard = ({ name, cuisines, rating, imageId, areaName, onClick })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "res-card",
+        onClick: onClick,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: (0, _constant.CDN_URL) + imageId,
+                alt: name
+            }, void 0, false, {
+                fileName: "src/components/Restaurant.js",
+                lineNumber: 6,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: name
+            }, void 0, false, {
+                fileName: "src/components/Restaurant.js",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "res-area",
+                children: areaName
+            }, void 0, false, {
+                fileName: "src/components/Restaurant.js",
+                lineNumber: 8,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "res-cuisines",
+                children: cuisines.join(", ")
+            }, void 0, false, {
+                fileName: "src/components/Restaurant.js",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "res-meta",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "res-rating",
+                    children: [
+                        "\u2B50 ",
+                        rating
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Restaurant.js",
+                    lineNumber: 11,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Restaurant.js",
+                lineNumber: 10,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Restaurant.js",
+        lineNumber: 5,
+        columnNumber: 7
+    }, undefined);
+};
+_c = RestaurantCard;
+exports.default = RestaurantCard;
+var _c;
+$RefreshReg$(_c, "RestaurantCard");
+
+  $parcel$ReactRefreshHelpers$9ab4.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../utils/constant":"2QBK6"}],"g2MAn":[function(require,module,exports,__globalThis) {
+module.exports = JSON.parse('{"restaurants":[{"info":{"id":"786600","name":"Pizza Hut","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/9/1/ff40b015-f39d-441f-9f1d-243b6f84c8b4_786600.JPG","locality":"Malad West","areaName":"Malad West","costForTwo":"\u20B9350 for two","cuisines":["Pizzas"],"avgRating":4.1,"parentId":"721","avgRatingString":"4.1","totalRatingsString":"1.4K+","sla":{"deliveryTime":22,"lastMileTravel":0.8,"serviceability":"SERVICEABLE","slaString":"20-25 mins","lastMileTravelString":"0.8 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-25 05:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"},{"imageId":"Rxawards/_CATEGORY-Pizza.png","description":"Delivery!"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}},{"attributes":{"description":"Delivery!","imageId":"Rxawards/_CATEGORY-Pizza.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B999"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"4.1","ratingCount":"167"},"source":"GOOGLE","sourceIconImageId":"v1704440323/google_ratings/rating_google_tag"},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/pizza-hut-malad-west-rest786600","type":"WEBLINK"}},{"info":{"id":"334050","name":"Theobroma","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/10/27/0fa7a56b-7837-4c8b-9b70-dc4e43e67627_334050.JPG","locality":"Malad West","areaName":"Malad West","costForTwo":"\u20B9400 for two","cuisines":["Bakery","Desserts"],"avgRating":4.6,"parentId":"1040","avgRatingString":"4.6","totalRatingsString":"9.3K+","sla":{"deliveryTime":16,"lastMileTravel":1.9,"serviceability":"SERVICEABLE","slaString":"15-20 mins","lastMileTravelString":"1.9 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-25 02:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"},{"imageId":"Rxawards/_CATEGORY-Desserts.png","description":"Delivery!"},{"imageId":"newg.png","description":"Gourmet"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}},{"attributes":{"description":"Delivery!","imageId":"Rxawards/_CATEGORY-Desserts.png"}},{"attributes":{"description":"Gourmet","imageId":"newg.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B949"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"4.1","ratingCount":"210"},"source":"GOOGLE","sourceIconImageId":"v1704440323/google_ratings/rating_google_tag"},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/theobroma-malad-west-rest334050","type":"WEBLINK"}},{"info":{"id":"23729","name":"McDonald\'s","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/10/3/407c07c3-da9d-406f-8676-d714e9b87114_23729.JPG","locality":"Unity Heights","areaName":"Malad West","costForTwo":"\u20B9400 for two","cuisines":["Burgers","Beverages","Cafe","Desserts"],"avgRating":4.5,"parentId":"630","avgRatingString":"4.5","totalRatingsString":"33K+","sla":{"deliveryTime":16,"lastMileTravel":0.9,"serviceability":"SERVICEABLE","slaString":"15-20 mins","lastMileTravelString":"0.9 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-25 03:45:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"},{"imageId":"Rxawards/_CATEGORY-Burger.png","description":"Delivery!"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}},{"attributes":{"description":"Delivery!","imageId":"Rxawards/_CATEGORY-Burger.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B9119"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/mcdonalds-unity-heights-malad-west-rest23729","type":"WEBLINK"}},{"info":{"id":"65667","name":"Starbucks Coffee","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/8/22/0a47c850-19de-4eac-8c16-1f521f68b08d_65667.JPG","locality":"Goregaon East","areaName":"Goregaon East","costForTwo":"\u20B9400 for two","cuisines":["Beverages","Cafe","Snacks","Desserts","Bakery","Ice Cream"],"avgRating":4.4,"parentId":"195515","avgRatingString":"4.4","totalRatingsString":"2.6K+","sla":{"deliveryTime":39,"lastMileTravel":3.8,"serviceability":"SERVICEABLE","slaString":"35-40 mins","lastMileTravelString":"3.8 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 20:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"Green%20Dot%20Awards/Best%20In%20Veg%20Cafe.png","description":"Delivery!"},{"imageId":"Rxawards/_CATEGORY-Cafe%20&%20Chai.png","description":"Delivery!"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"Delivery!","imageId":"Green%20Dot%20Awards/Best%20In%20Veg%20Cafe.png"}},{"attributes":{"description":"Delivery!","imageId":"Rxawards/_CATEGORY-Cafe%20&%20Chai.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B979"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"4.4","ratingCount":"3.0K+"},"source":"GOOGLE","sourceIconImageId":"v1704440323/google_ratings/rating_google_tag"},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/starbucks-coffee-goregaon-east-rest65667","type":"WEBLINK"}},{"info":{"id":"438882","name":"Chaayos Chai+Snacks=Relax","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/dfbcecfc-b380-4648-930a-b9b56b21e781_438882.JPG","locality":"Siddharath Nagar","areaName":"Goregaon West","costForTwo":"\u20B9250 for two","cuisines":["Bakery","Beverages","Chaat","Desserts","Home Food","Italian","Maharashtrian","Snacks","Street Food","Sweets"],"avgRating":4.5,"parentId":"281782","avgRatingString":"4.5","totalRatingsString":"1.8K+","sla":{"deliveryTime":35,"lastMileTravel":3.9,"serviceability":"SERVICEABLE","slaString":"35-45 mins","lastMileTravelString":"3.9 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 23:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"Rxawards/_CATEGORY-Cafe%20&%20Chai.png","description":"Delivery!"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"Delivery!","imageId":"Rxawards/_CATEGORY-Cafe%20&%20Chai.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B984"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/chaayos-chai-snacks-relax-siddharath-nagar-goregaon-west-rest438882","type":"WEBLINK"}},{"info":{"id":"625416","name":"Subway","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/6/12/09a91ff3-5676-4f1a-93c4-8bd34351af4e_625416.jpg","locality":"vaishno","areaName":"Malad East","costForTwo":"\u20B9350 for two","cuisines":["sandwich","Salads","wrap","Healthy Food"],"avgRating":4.1,"parentId":"2","avgRatingString":"4.1","totalRatingsString":"2.6K+","sla":{"deliveryTime":35,"lastMileTravel":2.5,"serviceability":"SERVICEABLE","slaString":"35-40 mins","lastMileTravelString":"2.5 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-25 06:00:00","opened":true},"badges":{},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B969"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/subway-vaishno-malad-east-rest625416","type":"WEBLINK"}},{"info":{"id":"24632","name":"Burger King","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/6/18/155c18c4-dbd0-4def-b0ec-ef12449b274f_24632.jpg","locality":"Infinity Malad","areaName":"Malad West","costForTwo":"\u20B9350 for two","cuisines":["Burgers","American"],"avgRating":4.2,"parentId":"166","avgRatingString":"4.2","totalRatingsString":"19K+","sla":{"deliveryTime":36,"lastMileTravel":1.7,"serviceability":"SERVICEABLE","slaString":"35-45 mins","lastMileTravelString":"1.7 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 23:00:00","opened":true},"badges":{},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B959"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/burger-king-infinity-malad-malad-west-rest24632","type":"WEBLINK"}},{"info":{"id":"443509","name":"EatFit","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/10/6/8d753d99-e12d-466d-bdef-547a7a43ba2a_443509.jpg","locality":"Dammaiguda","areaName":"Malad West","costForTwo":"\u20B9250 for two","cuisines":["Chinese","Healthy Food","Tandoor","Pizzas","North Indian","Thalis","Biryani"],"avgRating":4.3,"parentId":"76139","avgRatingString":"4.3","totalRatingsString":"3.3K+","sla":{"deliveryTime":24,"lastMileTravel":1.7,"serviceability":"SERVICEABLE","slaString":"20-25 mins","lastMileTravelString":"1.7 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-25 01:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"High%20Protein/rx%20tag%205.png","description":"High Protein"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"High Protein","imageId":"High%20Protein/rx%20tag%205.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B949"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"4.2","ratingCount":"307"},"source":"GOOGLE","sourceIconImageId":"v1704440323/google_ratings/rating_google_tag"},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/eatfit-dammaiguda-malad-west-rest443509","type":"WEBLINK"}},{"info":{"id":"521633","name":"CakeZone Patisserie","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/11/17/0615fe1f-af48-4c2d-b2d9-d0ce7b83d89c_521633.JPG","locality":"MALAD WEST","areaName":"Kachpada Off Link Road","costForTwo":"\u20B9200 for two","cuisines":["Bakery","Desserts","Sweets","Ice Cream"],"avgRating":4.3,"parentId":"7003","avgRatingString":"4.3","totalRatingsString":"1.5K+","sla":{"deliveryTime":28,"lastMileTravel":1.7,"serviceability":"SERVICEABLE","slaString":"25-30 mins","lastMileTravelString":"1.7 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-25 03:00:00","opened":true},"badges":{},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B9380"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/cakezone-patisserie-malad-west-kachpada-off-link-road-rest521633","type":"WEBLINK"}},{"info":{"id":"257780","name":"Great Indian Khichdi by EatFit","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/10/15/c7dbc8d4-3dcf-4749-a009-d2ac6ab74f93_257780.JPG","locality":"RAMACHANDRA LANE","areaName":"Malad West","costForTwo":"\u20B9200 for two","cuisines":["Home Food","Indian","North Indian","Healthy Food","Snacks","Desserts","Rajasthani","South Indian","Maharashtrian","Sweets"],"avgRating":4.3,"veg":true,"parentId":"319582","avgRatingString":"4.3","totalRatingsString":"4.2K+","sla":{"deliveryTime":24,"lastMileTravel":1.7,"serviceability":"SERVICEABLE","slaString":"20-25 mins","lastMileTravelString":"1.7 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-25 01:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"High%20Protein/rx%20tag%205.png","description":"High Protein"},{"imageId":"v1695133679/badges/Pure_Veg111.png","description":"pureveg"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"High Protein","imageId":"High%20Protein/rx%20tag%205.png"}},{"attributes":{"description":"pureveg","imageId":"v1695133679/badges/Pure_Veg111.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B999"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/great-indian-khichdi-by-eatfit-ramachandra-lane-malad-west-rest257780","type":"WEBLINK"}},{"info":{"id":"32292","name":"Cafe Coffee Day","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/8/21/73416680-2e18-4e0c-9d00-ff1e8d073341_32292.JPG","locality":"Kandivali West","areaName":"Kandivali West","costForTwo":"\u20B9400 for two","cuisines":["Beverages","Cafe","Snacks","Desserts","Burgers","Ice Cream","Bakery","Fast Food"],"avgRating":4.2,"parentId":"1","avgRatingString":"4.2","totalRatingsString":"2.2K+","sla":{"deliveryTime":24,"lastMileTravel":2,"serviceability":"SERVICEABLE","slaString":"20-25 mins","lastMileTravelString":"2.0 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-25 00:00:00","opened":true},"badges":{},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B9189"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"4.1","ratingCount":"645"},"source":"GOOGLE","sourceIconImageId":"v1704440323/google_ratings/rating_google_tag"},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/cafe-coffee-day-kandivali-west-rest32292","type":"WEBLINK"}},{"info":{"id":"6867","name":"Baskin Robbins - Ice Cream Desserts","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/4/24/9b64ec40-960f-48c7-8770-d401d9e69792_6867.JPG","locality":"Orlem, Malad West","areaName":"Malad West","costForTwo":"\u20B9250 for two","cuisines":["Desserts","Ice Cream"],"avgRating":4.6,"veg":true,"parentId":"5588","avgRatingString":"4.6","totalRatingsString":"5.2K+","sla":{"deliveryTime":14,"lastMileTravel":1.9,"serviceability":"SERVICEABLE","slaString":"10-15 mins","lastMileTravelString":"1.9 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 23:59:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"},{"imageId":"Rxawards/_CATEGORY-Ice-creams.png","description":"Delivery!"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}},{"attributes":{"description":"Delivery!","imageId":"Rxawards/_CATEGORY-Ice-creams.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B951"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/baskin-robbins-ice-cream-desserts-orlem-malad-west-rest6867","type":"WEBLINK"}},{"info":{"id":"790135","name":"The Belgian Waffle Co.","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/6/16/7329285a-14bd-4412-bfb8-9ee0493b86be_790135.jpg","locality":"UNITY HEIGHTS","areaName":"MALAD","costForTwo":"\u20B9200 for two","cuisines":["Waffle","Desserts","Ice Cream"],"avgRating":4.6,"veg":true,"parentId":"2233","avgRatingString":"4.6","totalRatingsString":"844","sla":{"deliveryTime":22,"lastMileTravel":0.8,"serviceability":"SERVICEABLE","slaString":"20-25 mins","lastMileTravelString":"0.8 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-25 03:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"},{"imageId":"Rxawards/_CATEGORY-Desserts.png","description":"Delivery!"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}},{"attributes":{"description":"Delivery!","imageId":"Rxawards/_CATEGORY-Desserts.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"20% OFF","subHeader":"UPTO \u20B950"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/the-belgian-waffle-co-unity-heights-malad-rest790135","type":"WEBLINK"}},{"info":{"id":"10773","name":"Pishu\'s - Drink Your Fruit","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/11/10/981bfc14-bc75-4a90-87a8-63a476ece6c0_10773.jpg","locality":"Link Road","areaName":"Malad West","costForTwo":"\u20B9550 for two","cuisines":["Juices","Beverages","Healthy Food"],"avgRating":4.5,"parentId":"471268","avgRatingString":"4.5","totalRatingsString":"18K+","sla":{"deliveryTime":29,"lastMileTravel":1.9,"serviceability":"SERVICEABLE","slaString":"25-30 mins","lastMileTravelString":"1.9 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-25 04:00:00","opened":true},"badges":{},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B969"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/pishus-drink-your-fruit-link-road-malad-west-rest10773","type":"WEBLINK"}},{"info":{"id":"6379","name":"Greens Restaurant","cloudinaryImageId":"mthao2x3qcccqytonpin","locality":"Malad West","areaName":"Malad West","costForTwo":"\u20B9500 for two","cuisines":["Chinese","South Indian"],"avgRating":4.5,"parentId":"9208","avgRatingString":"4.5","totalRatingsString":"126K+","sla":{"deliveryTime":28,"lastMileTravel":1.9,"serviceability":"SERVICEABLE","slaString":"25-30 mins","lastMileTravelString":"1.9 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-25 00:00:00","opened":true},"badges":{},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B999"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"4.1","ratingCount":"5.9K+"},"source":"GOOGLE","sourceIconImageId":"v1704440323/google_ratings/rating_google_tag"},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/greens-restaurant-malad-west-rest6379","type":"WEBLINK"}},{"info":{"id":"738576","name":"Blue Tokai Coffee Roasters","cloudinaryImageId":"1a0521375f07155eda2f1ed263206831","locality":"evershine nagar","areaName":"Malad Kan West","costForTwo":"\u20B9600 for two","cuisines":["Cafe","Coffee","Beverages"],"avgRating":4.6,"parentId":"2682","avgRatingString":"4.6","totalRatingsString":"617","sla":{"deliveryTime":22,"lastMileTravel":1.8,"serviceability":"SERVICEABLE","slaString":"20-25 mins","lastMileTravelString":"1.8 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 23:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"newg.png","description":"Gourmet"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"Gourmet","imageId":"newg.png"}}]},"textBased":{},"textExtendedBadges":{}}},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/blue-tokai-coffee-roasters-evershine-nagar-malad-kan-west-rest738576","type":"WEBLINK"}},{"info":{"id":"545673","name":"Kwality Walls Ice Cream and More","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2024/6/13/f499f2a4-c142-4421-bc92-eafaf4fc5820_545673.JPG","locality":"Opp Madhur Chsl","areaName":"Malad Kan West","costForTwo":"\u20B9200 for two","cuisines":["Desserts","Ice Cream","Ice Cream Cakes"],"avgRating":4.6,"veg":true,"parentId":"582","avgRatingString":"4.6","totalRatingsString":"549","sla":{"deliveryTime":22,"lastMileTravel":1.3,"serviceability":"SERVICEABLE","slaString":"20-25 mins","lastMileTravelString":"1.3 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-12-01 00:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"},{"imageId":"v1695133679/badges/Pure_Veg111.png","description":"pureveg"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}},{"attributes":{"description":"pureveg","imageId":"v1695133679/badges/Pure_Veg111.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"20% OFF","subHeader":"UPTO \u20B960"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/kwality-walls-ice-cream-and-more-opp-madhur-chsl-malad-kan-west-rest545673","type":"WEBLINK"}},{"info":{"id":"673365","name":"Bombay Sweet Shop","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/11/14/0c762d46-88ef-4d57-aed2-4708e69b498c_673365.jpg","locality":"Malad West","areaName":"Malad West","costForTwo":"\u20B9700 for two","cuisines":["Sweets","Desserts","Snacks"],"avgRating":4.6,"parentId":"48883","avgRatingString":"4.6","totalRatingsString":"978","sla":{"deliveryTime":17,"lastMileTravel":1.7,"serviceability":"SERVICEABLE","slaString":"15-20 mins","lastMileTravelString":"1.7 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 23:30:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"},{"imageId":"newg.png","description":"Gourmet"},{"imageId":"v1695133679/badges/Pure_Veg111.png","description":"pureveg"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}},{"attributes":{"description":"Gourmet","imageId":"newg.png"}},{"attributes":{"description":"pureveg","imageId":"v1695133679/badges/Pure_Veg111.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B957"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"4.1","ratingCount":"19K+"},"source":"GOOGLE","sourceIconImageId":"v1704440323/google_ratings/rating_google_tag"},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/bombay-sweet-shop-malad-west-rest673365","type":"WEBLINK"}},{"info":{"id":"468276","name":"Atta Girl","cloudinaryImageId":"obtfid1fav7k3dqlamql","locality":"Datt Mandir Road","areaName":"Malad West","costForTwo":"\u20B9500 for two","cuisines":["South Indian"],"avgRating":4.7,"veg":true,"parentId":"37659","avgRatingString":"4.7","totalRatingsString":"683","sla":{"deliveryTime":24,"lastMileTravel":2.1,"serviceability":"SERVICEABLE","slaString":"20-25 mins","lastMileTravelString":"2.1 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-24 20:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"v1695133679/badges/Pure_Veg111.png","description":"pureveg"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"pureveg","imageId":"v1695133679/badges/Pure_Veg111.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B9129"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/atta-girl-datt-mandir-road-malad-west-rest468276","type":"WEBLINK"}},{"info":{"id":"521637","name":"The Dessert Heaven - Pastry, Brownie and Cakes","cloudinaryImageId":"RX_THUMBNAIL/IMAGES/VENDOR/2025/11/17/68b5ec33-e8a2-46bc-a8a5-51530d006293_521637.JPG","locality":"Ciem Industrial Estate","areaName":"Kachpada Off Link Road","costForTwo":"\u20B9200 for two","cuisines":["Bakery","Desserts","Sweets","Ice Cream"],"avgRating":4.6,"veg":true,"parentId":"506176","avgRatingString":"4.6","totalRatingsString":"553","sla":{"deliveryTime":26,"lastMileTravel":1.4,"serviceability":"SERVICEABLE","slaString":"25-30 mins","lastMileTravelString":"1.4 km","iconType":"ICON_TYPE_EMPTY"},"availability":{"nextCloseTime":"2025-11-25 03:00:00","opened":true},"badges":{"imageBadges":[{"imageId":"android/static-assets/icons/big_rx.png","description":"bolt!"},{"imageId":"v1695133679/badges/Pure_Veg111.png","description":"pureveg"}]},"isOpen":true,"type":"F","badgesV2":{"entityBadges":{"imageBased":{"badgeObject":[{"attributes":{"description":"bolt!","imageId":"android/static-assets/icons/big_rx.png"}},{"attributes":{"description":"pureveg","imageId":"v1695133679/badges/Pure_Veg111.png"}}]},"textBased":{},"textExtendedBadges":{}}},"aggregatedDiscountInfoV3":{"header":"ITEMS","subHeader":"AT \u20B969"},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY"},"differentiatedUi":{"displayType":"ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT","differentiatedUiMediaDetails":{"lottie":{},"video":{}}},"reviewsSummary":{},"displayType":"RESTAURANT_DISPLAY_TYPE_DEFAULT","restaurantOfferPresentationInfo":{},"externalRatings":{"aggregatedRating":{"rating":"--"}},"ratingsDisplayPreference":"RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"},"analytics":{"context":"seo-data-e266b080-7834-42f5-aef8-1033bd06050f"},"cta":{"link":"https://www.swiggy.com/city/mumbai/the-dessert-heaven-pastry-brownie-and-cakes-ciem-industrial-estate-kachpada-off-link-road-rest521637","type":"WEBLINK"}}]}');
+
+},{}]},["icAAj","blcJa"], "blcJa", "parcelRequirea9e5", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=React-final.cb65f72e.js.map
